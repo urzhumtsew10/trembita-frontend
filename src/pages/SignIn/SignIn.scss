@@ -1,0 +1,89 @@
+@import "../../index.scss";
+
+.signIn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.signIn__imgBox {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 1100px;
+  height: 1097px;
+  border-radius: 20px;
+  background-image: url("../../assets/images/sign-in-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 1280px) and (max-width: 1919px) {
+    width: 620px;
+    height: 1097px;
+  }
+  @media (min-width: 0px) and (max-width: 1279px) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1127px;
+    border-radius: 0;
+  }
+}
+.imgBox__brandBox {
+  position: absolute;
+  top: 45px;
+  right: 45px;
+  display: flex;
+  align-items: flex-end;
+  @media (min-width: 1280px) and (max-width: 1919px) {
+    top: 30px;
+    right: 30px;
+  }
+  @media (min-width: 360px) and (max-width: 767px) {
+    top: calc(15px + (30 - 15) * ((100vw - 360px) / (768 - 360)));
+    right: calc(10px + (30 - 10) * ((100vw - 360px) / (768 - 360)));
+  }
+}
+.brandBox__title {
+  margin-right: 10px;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  font-family: $secondory-font;
+  color: $second-white-color;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    font-size: calc(30px + (45 - 30) * ((100vw - 768px) / (1280 - 768)));
+    line-height: calc(30px + (50 - 30) * ((100vw - 768px) / (1280 - 768)));
+  }
+  @media (min-width: 360px) and (max-width: 767px) {
+    font-size: calc(20px + (30 - 20) * ((100vw - 360px) / (768 - 360)));
+    line-height: calc(15px + (30 - 15) * ((100vw - 360px) / (768 - 360)));
+  }
+}
+.brandBox__img {
+  width: 40px;
+  height: 30px;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    width: calc(30px + (40 - 30) * ((100vw - 768px) / (1280 - 768)));
+    height: calc(22.5px + (30 - 22.5) * ((100vw - 768px) / (1280 - 768)));
+  }
+}
+.imgBox__slogan {
+  position: absolute;
+  left: 70px;
+  bottom: 70px;
+  width: 925px;
+  font-size: 56px;
+  font-weight: 500;
+  font-family: $secondory-font;
+  color: $second-white-color;
+  @media (min-width: 1280px) and (max-width: 1919px) {
+    width: 570px;
+    font-size: 45px;
+    left: 30px;
+    bottom: 30px;
+  }
+  @media (min-width: 0px) and (max-width: 1279px) {
+    display: none;
+  }
+}
